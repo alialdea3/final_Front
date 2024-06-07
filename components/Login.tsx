@@ -1,9 +1,11 @@
 import { FunctionComponent } from "preact";
 
 const Login: FunctionComponent = () => {
+  //{<p class="error-message">{"Credenciales incorrectas"}</p>}
   return (
     <div class="login-container">
       <h2>Login</h2>
+
       <form method="POST" action="/login">
         <label for="email">Email</label>
         <input type="text" id="email" name="email" required />
