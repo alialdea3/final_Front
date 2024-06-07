@@ -7,10 +7,12 @@ type Props = {
 
 const Header: FunctionComponent<Props> = ({ username }) => {
   return (
-    <div class="header-content">
-      <span class="user-name">{username}</span>
-      <Logout />
-    </div>
+    <header class="header-container">
+      <div class="header-content">
+        <span class="user-name">{username}</span>
+        <Logout />
+      </div>
+    </header>
   );
 };
 export default Header;

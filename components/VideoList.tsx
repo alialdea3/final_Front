@@ -1,7 +1,7 @@
 import { Video } from "../types.ts";
 import { FunctionComponent } from "preact";
 import Header from "./Headers.tsx";
-import Fav from "../islands/FAv.tsx";
+import Fav from "../islands/Fav.tsx";
 
 type Props = {
   videos: Video[];

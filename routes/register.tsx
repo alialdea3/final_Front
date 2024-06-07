@@ -1,7 +1,6 @@
 import { FreshContext, Handlers } from "$fresh/server.ts";
 import jwt from "jsonwebtoken";
 import { getCookies, setCookie } from "$std/http/cookie.ts";
-import Login from "../components/Login.tsx";
 import Register from "../components/Register.tsx";
 
 export const handler: Handlers = {

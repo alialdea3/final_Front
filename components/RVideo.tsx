@@ -1,4 +1,4 @@
-import Fav from "../islands/FAv.tsx";
+import Fav from "../islands/Fav.tsx";
 import { Video } from "../types.ts";
 import { FunctionComponent } from "preact";
 

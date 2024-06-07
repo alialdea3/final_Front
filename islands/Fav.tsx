@@ -7,11 +7,11 @@ type Props = {
   userid: string;
 };
 
-const Fav: FunctionComponent<Props> = ({ id, fav, userid }) => {
+const Fav: FunctionComponent<Props> = ({ userid, id, fav }) => {
   const [favourite, setFavourite] = useState<boolean>(fav);
   const toggleFav = async (userid: string, id: string) => {
     const res = await fetch(
-      `https://videoapp-api.deno.dev/fav/${p}/${v}`,
+      `https://videoapp-api.deno.dev/fav/${userid}/${id}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
